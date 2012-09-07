@@ -9,6 +9,9 @@ local-zip-file     := stockrom.zip
 local-out-zip-file := MIUI_d1.zip
 
 #
+local-previous-target-dir := ~/workspace/ota_base/d1
+
+#
 local-miui-modified-apps := MiuiSystemUI MiuiHome Mms Phone Settings ThemeManager
 
 # All apps from original ZIP, but has smali files chanded

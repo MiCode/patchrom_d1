@@ -175,9 +175,9 @@ ro.config.hw_allow_ums_and_mtp=true
 keyguard.no_require_sim=true
 #DTS2012020907712 guqi00194542 20120210 end
 #DTS2012021302244 xiazhonglin00206005 20120213 begin
-ro.config.notification_sound=Glory.ogg
-ro.config.alarm_alert=Pmukkale.ogg
-ro.config.ringtone=Huawei_Tune.ogg
+#ro.config.notification_sound=Glory.ogg
+#ro.config.alarm_alert=Pmukkale.ogg
+#ro.config.ringtone=Huawei_Tune.ogg
 #DTS2012021302244 xiazhonglin00206005 20120213 end
 #DTS2012021402184 z00181848 20120221 begin
 ro.config.hw_proximitySensor=true
@@ -186,7 +186,7 @@ ro.config.hw_proximitySensor=true
 ro.config.switchPrimaryVolume=true
 #DTS2012021607935  guanjunujie 20120214 end
 #DTS2012021603135 h58695 begin
-persist.sys.main_storage=internal_sd
+#persist.sys.main_storage=internal_sd
 #DTS2012021603135 h58695 end
 # DTS2012021305624 h00152727 for WMA support 20120223 begin
 ro.config.helix_enable=true
