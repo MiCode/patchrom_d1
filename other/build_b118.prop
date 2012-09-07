@@ -306,5 +306,5 @@ persist.sys.timezone=Asia/Shanghai
 persist.sys.main_storage=external_sd
 
 ro.telephony.call_ring.multiple=false
-
 ro.product.mod_device=hwu9500
+persist.sys.usb.config=mtp,mass_storage,adb
