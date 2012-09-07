@@ -22,6 +22,7 @@ local-phone-apps :=  \
 			OMACP \
 			PicoTts \
 			PowerSavingMode \
+			PowerManagement \
 			Settings_ex \
 			SettingsProvider \
 			SharedStorageBackup \
