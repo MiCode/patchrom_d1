@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="prompt">%stenta criar uma conexão VPN.</string>
+    <string name="warning">Se prosseguir, você dará permissão para que o aplicativo intercepte todo o tráfego de rede.<b>NÃO aceite a não ser que confie no aplicativo.</b>Caso contrário, você corre o risco de comprometer seus dados por um software malicioso.</string>
+    <string name="accept">Confio neste aplicativo.</string>
+    <string name="legacy_title">VPN está conectado</string>
+    <string name="configure">Configurar</string>
+    <string name="disconnect">Desconectar</string>
+    <string name="session">Sessão:</string>
+    <string name="duration">Duração:</string>
+    <string name="data_transmitted">Enviado:</string>
+    <string name="data_received">Recebido:</string>
+    <string name="data_value_format">%1$sbytes /%2$spacotes</string>
+</resources>

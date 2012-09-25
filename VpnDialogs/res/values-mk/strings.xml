@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="prompt">%sобиди да создаде VPN врска.</string>
+    <string name="warning">"Ако продолжиш, и даваш на апликацијата
+        дозвола да го пресретне сиот сообраќај на мрежата."<b>НЕ прифаќај доколку не и веруваш на апликацијата.</b>"Инаку,
+        се изложуваш на ризик твоите податоци да бидат компромитирани од злонамерен
+        софтвер."</string>
+    <string name="accept">И верувам на оваа апликација.</string>
+    <string name="legacy_title">VPN е поврзана</string>
+    <string name="configure">Конфигурирај</string>
+    <string name="disconnect">Исклучи</string>
+    <string name="session">Сесија:</string>
+    <string name="duration">Времетраење:</string>
+    <string name="data_transmitted">Испратени:</string>
+    <string name="data_received">Примени:</string>
+    <string name="data_value_format">%1$sbytes /%2$sпакети</string>
+</resources>
