@@ -581,6 +581,8 @@
 
     move-result-object v4
 
+    goto :cond_0
+
     if-eqz v4, :cond_0
 
     .line 63
