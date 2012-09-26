@@ -15,7 +15,7 @@ local-previous-target-dir := ~/workspace/ota_base/d1
 local-miui-modified-apps := MiuiSystemUI MiuiHome Mms Phone Settings ThemeManager
 
 # All apps from original ZIP, but has smali files chanded
-local-modified-apps := HwCamera SettingsProvider PowerManagement MediaProvider VpnDialogs
+local-modified-apps := HwCamera SettingsProvider PowerManagement MediaProvider
 
 # All apks from MIUI
 local-miui-removed-apps     := SettingsProvider MediaProvider Bluetooth 
