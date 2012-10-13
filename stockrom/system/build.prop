@@ -3,8 +3,8 @@
 ro.build.version.sdk=15
 ro.build.version.codename=REL
 ro.build.version.release=4.0.3
-ro.build.date=Tue Jun 26 20:34:40 CST 2012
-ro.build.date.utc=1340714080
+ro.build.date=Thu Sep  6 22:45:32 CST 2012
+ro.build.date.utc=1346942732
 ro.build.type=user
 ro.build.user=front
 ro.build.host=verserver-ap-modem
@@ -253,14 +253,21 @@ ro.config.dolby.speaker.gain=5000
 ro.config.PowerSavingVaule=30
 ro.config.PowerSavingMode=true
 #DTS2012041902096 zhouweifeng 20120419 end
+#DTS2012062701444 c81004170 2012/07/05 Start
 # DTS2012052207487  c81004170 2012/06/08 Start
 #DTS2012041903681 y00184280 2012/04/19 Start
-ro.com.google.gmsversion=ics_signed_r2
+#DTS2012080800950 zhangyongliang begin
+ro.com.google.gmsversion=ics_signed_r4
+#DTS2012080800950 zhangyongliang end
 #DTS2012041903681 y00184280 2012/04/19 End
 # DTS2012052207487  c81004170 2012/06/08 End 
+#DTS2012062701444 c81004170 2012/07/05 End
 #DTS2012042604526 jinyan 20120503 begin
 drm.service.enabled=1
 #DTS2012042604526 jinyan 20120503 end
+# DTS2012072301695 20120723 guqi00194542 begin
+ro.ads.bootanim=true
+# DTS2012072301695 20120723 guqi00194542 end
 
 # end of volatile config
 
@@ -276,7 +283,7 @@ ro.opengles.version=131072
 ro.config.hw_gps=47511
 ro.sf.lcd_density=320
 dalvik.vm.heapstartsize=8m
-dalvik.vm.heapgrowthlimit=64m
+dalvik.vm.heapgrowthlimit=128m
 dalvik.vm.heapsize=256m
 dalvik.vm.dexopt-flags=m=y
 net.bt.name=Android
@@ -284,8 +291,8 @@ dalvik.vm.stack-trace-file=/data/anr/traces.txt
 
 
 ro.product.board=U9500
-ro.confg.hw_systemversion=U9500-1V100R001CHNC00B118_SYSTEM
-ro.build.display.id=U9500-B118-JiHe
+ro.confg.hw_systemversion=V100R001CHNC00B128_SYSTEM
+ro.build.display.id=V100R001CHNC00B128
 ro.product.model=U9500
 ro.product.brand=Huawei
 ro.build.tags=ota-rel-keys,release-keys
@@ -293,6 +300,6 @@ ro.product.manufacturer=HUAWEI
 ro.product.name=U9500
 ro.product.device=hwu9500
 ro.build.id=HuaweiU9500
-ro.build.version.incremental=C00B118
-ro.build.description=U9500-user 4.0.3 HuaweiU9500 C00B118 ota-rel-keys,release-keys
-ro.build.fingerprint=Huawei/U9500/hwu9500:4.0.3/HuaweiU9500/C00B118:user/ota-rel-keys,release-keys
+ro.build.version.incremental=C00B128
+ro.build.description=U9500-user 4.0.3 HuaweiU9500 C00B128 ota-rel-keys,release-keys
+ro.build.fingerprint=Huawei/U9500/hwu9500:4.0.3/HuaweiU9500/C00B128:user/ota-rel-keys,release-keys

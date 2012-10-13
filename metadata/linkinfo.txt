@@ -36,7 +36,6 @@ system/bin/rmdir|system/bin/toolbox
 system/bin/rmmod|system/bin/toolbox
 system/bin/rm|system/bin/toolbox
 system/bin/route|system/bin/toolbox
-system/bin/r|system/bin/toolbox
 system/bin/schedtop|system/bin/toolbox
 system/bin/sendevent|system/bin/toolbox
 system/bin/setconsole|system/bin/toolbox
@@ -54,6 +53,11 @@ system/bin/uptime|system/bin/toolbox
 system/bin/vmstat|system/bin/toolbox
 system/bin/watchprops|system/bin/toolbox
 system/bin/wipe|system/bin/toolbox
+system/fonts/DroidSans-Bold.ttf|system/fonts/Roboto-Bold.ttf
+system/fonts/DroidSans.ttf|system/fonts/Roboto-Regular.ttf
+system/vendor/firmware/hdcp.keys|factory/hdcp.keys
+system/vendor/lib/libbltsville_cpu.so|system/vendor/lib/./libbltsville_ticpu.so
+system/vendor/lib/libbltsville_ticpu.so|system/vendor/lib/./libbltsville_ticpu.2.0.0.8.so
 system/xbin/arp|system/xbin/busybox
 system/xbin/ash|system/xbin/busybox
 system/xbin/awk|system/xbin/busybox
