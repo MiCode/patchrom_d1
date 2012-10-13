@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 3104
+    .line 3099
     iput-object p1, p0, Lcom/android/hwcamera/VideoCamera$7;->this$0:Lcom/android/hwcamera/VideoCamera;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 3
 
     .prologue
-    .line 3106
+    .line 3101
     iget-object v0, p0, Lcom/android/hwcamera/VideoCamera$7;->this$0:Lcom/android/hwcamera/VideoCamera;
 
     iget-object v1, p0, Lcom/android/hwcamera/VideoCamera$7;->this$0:Lcom/android/hwcamera/VideoCamera;
@@ -60,19 +60,19 @@
 
     invoke-static {v0, v1, v2}, Lcom/android/hwcamera/CameraSettings;->restorePreferences(Landroid/content/Context;Lcom/android/hwcamera/ComboPreferences;Landroid/hardware/Camera$Parameters;)V
 
-    .line 3108
+    .line 3103
     iget-object v0, p0, Lcom/android/hwcamera/VideoCamera$7;->this$0:Lcom/android/hwcamera/VideoCamera;
 
     #calls: Lcom/android/hwcamera/VideoCamera;->restoreParameterToDefault()V
     invoke-static {v0}, Lcom/android/hwcamera/VideoCamera;->access$5700(Lcom/android/hwcamera/VideoCamera;)V
 
-    .line 3109
+    .line 3104
     iget-object v0, p0, Lcom/android/hwcamera/VideoCamera$7;->this$0:Lcom/android/hwcamera/VideoCamera;
 
     #calls: Lcom/android/hwcamera/VideoCamera;->onSharedPreferencesChanged()V
     invoke-static {v0}, Lcom/android/hwcamera/VideoCamera;->access$5800(Lcom/android/hwcamera/VideoCamera;)V
 
-    .line 3110
+    .line 3105
     iget-object v0, p0, Lcom/android/hwcamera/VideoCamera$7;->this$0:Lcom/android/hwcamera/VideoCamera;
 
     #getter for: Lcom/android/hwcamera/VideoCamera;->mSuperPanel:Lcom/android/hwcamera/hwui/SuperPanel;
@@ -82,13 +82,13 @@
 
     if-eqz v0, :cond_0
 
-    .line 3111
+    .line 3106
     iget-object v0, p0, Lcom/android/hwcamera/VideoCamera$7;->this$0:Lcom/android/hwcamera/VideoCamera;
 
     #calls: Lcom/android/hwcamera/VideoCamera;->updatesuperpanel()V
     invoke-static {v0}, Lcom/android/hwcamera/VideoCamera;->access$6000(Lcom/android/hwcamera/VideoCamera;)V
 
-    .line 3113
+    .line 3108
     :cond_0
     return-void
 .end method

@@ -260,6 +260,9 @@
 .method public static native getDevicesForStream(I)I
 .end method
 
+.method public static native getDolbyEffectEnabled()Z
+.end method
+
 .method public static native getForceUse(I)I
 .end method
 

@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 3466
+    .line 3461
     iput-object p1, p0, Lcom/android/hwcamera/VideoCamera$AutoFocusCallback;->this$0:Lcom/android/hwcamera/VideoCamera;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .parameter "x1"
 
     .prologue
-    .line 3466
+    .line 3461
     invoke-direct {p0, p1}, Lcom/android/hwcamera/VideoCamera$AutoFocusCallback;-><init>(Lcom/android/hwcamera/VideoCamera;)V
 
     return-void
@@ -55,37 +55,37 @@
     .parameter "camera"
 
     .prologue
-    .line 3469
+    .line 3464
     iget-object v1, p0, Lcom/android/hwcamera/VideoCamera$AutoFocusCallback;->this$0:Lcom/android/hwcamera/VideoCamera;
 
     iget-boolean v1, v1, Lcom/android/hwcamera/VideoCamera;->mPausing:Z
 
     if-eqz v1, :cond_0
 
-    .line 3477
+    .line 3472
     :goto_0
     return-void
 
-    .line 3473
+    .line 3468
     :cond_0
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 
     move-result-object v0
 
-    .line 3474
+    .line 3469
     .local v0, msg:Landroid/os/Message;
     const/16 v1, 0x14
 
     iput v1, v0, Landroid/os/Message;->what:I
 
-    .line 3475
+    .line 3470
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v1
 
     iput-object v1, v0, Landroid/os/Message;->obj:Ljava/lang/Object;
 
-    .line 3476
+    .line 3471
     iget-object v1, p0, Lcom/android/hwcamera/VideoCamera$AutoFocusCallback;->this$0:Lcom/android/hwcamera/VideoCamera;
 
     #getter for: Lcom/android/hwcamera/VideoCamera;->mHandler:Landroid/os/Handler;

@@ -182,7 +182,7 @@
 
 .field private mCallingLimitted:Z
 
-.field mContext:Landroid/content/Context;
+.field private mContext:Landroid/content/Context;
 
 .field private mDimDelay:I
 

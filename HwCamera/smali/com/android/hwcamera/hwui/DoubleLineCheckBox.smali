@@ -68,7 +68,7 @@
     invoke-virtual {p0, v0}, Lcom/android/hwcamera/hwui/DoubleLineCheckBox;->setGravity(I)V
 
     .line 32
-    const v0, 0x7f0200a5
+    const v0, 0x7f0200aa
 
     invoke-virtual {p0, v0}, Lcom/android/hwcamera/hwui/DoubleLineCheckBox;->setBackgroundResource(I)V
 

@@ -194,7 +194,7 @@
     iput v6, p0, Lcom/android/hwcamera/hwui/FlashImageView;->mFlashModeState:I
 
     .line 92
-    const v0, 0x7f020067
+    const v0, 0x7f02006a
 
     .line 112
     :cond_1
@@ -219,7 +219,7 @@
     iput v7, p0, Lcom/android/hwcamera/hwui/FlashImageView;->mFlashModeState:I
 
     .line 95
-    const v0, 0x7f020066
+    const v0, 0x7f020069
 
     goto :goto_1
 
@@ -230,7 +230,7 @@
     iput v2, p0, Lcom/android/hwcamera/hwui/FlashImageView;->mFlashModeState:I
 
     .line 98
-    const v0, 0x7f020065
+    const v0, 0x7f020068
 
     goto :goto_1
 
@@ -265,7 +265,7 @@
     iput v6, p0, Lcom/android/hwcamera/hwui/FlashImageView;->mFlashModeState:I
 
     .line 106
-    const v0, 0x7f020067
+    const v0, 0x7f02006a
 
     goto :goto_1
 
@@ -283,7 +283,7 @@
     iput v7, p0, Lcom/android/hwcamera/hwui/FlashImageView;->mFlashModeState:I
 
     .line 109
-    const v0, 0x7f020066
+    const v0, 0x7f020069
 
     goto :goto_1
 .end method
@@ -512,7 +512,7 @@
     const-string v2, "off"
 
     .line 139
-    const v1, 0x7f020066
+    const v1, 0x7f020069
 
     .line 160
     :goto_1
@@ -561,7 +561,7 @@
     const-string v2, "auto"
 
     .line 143
-    const v1, 0x7f020065
+    const v1, 0x7f020068
 
     goto :goto_1
 
@@ -573,7 +573,7 @@
     const-string v2, "on"
 
     .line 147
-    const v1, 0x7f020067
+    const v1, 0x7f02006a
 
     goto :goto_1
 
@@ -590,7 +590,7 @@
     const-string v2, "off"
 
     .line 153
-    const v1, 0x7f020066
+    const v1, 0x7f020069
 
     goto :goto_1
 
@@ -602,7 +602,7 @@
     const-string v2, "torch"
 
     .line 157
-    const v1, 0x7f020067
+    const v1, 0x7f02006a
 
     goto :goto_1
 

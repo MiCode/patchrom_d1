@@ -183,9 +183,9 @@
     .parameter "cameraId"
 
     .prologue
-    const v9, 0x7f020080
+    const v9, 0x7f020083
 
-    const v8, 0x7f02007f
+    const v8, 0x7f020082
 
     .line 472
     iget-object v6, p0, Lcom/android/hwcamera/CameraSettings;->mCameraInfo:[Landroid/hardware/Camera$CameraInfo;

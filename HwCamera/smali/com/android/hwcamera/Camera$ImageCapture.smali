@@ -24,7 +24,7 @@
     .parameter
 
     .prologue
-    .line 1938
+    .line 1940
     iput-object p1, p0, Lcom/android/hwcamera/Camera$ImageCapture;->this$0:Lcom/android/hwcamera/Camera;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +38,7 @@
     .parameter "x1"
 
     .prologue
-    .line 1938
+    .line 1940
     invoke-direct {p0, p1}, Lcom/android/hwcamera/Camera$ImageCapture;-><init>(Lcom/android/hwcamera/Camera;)V
 
     return-void
@@ -49,7 +49,7 @@
     .parameter "x0"
 
     .prologue
-    .line 1938
+    .line 1940
     invoke-direct {p0}, Lcom/android/hwcamera/Camera$ImageCapture;->capture()V
 
     return-void
@@ -69,7 +69,7 @@
 
     const/4 v10, 0x0
 
-    .line 1940
+    .line 1942
     iget-object v6, p0, Lcom/android/hwcamera/Camera$ImageCapture;->this$0:Lcom/android/hwcamera/Camera;
 
     #getter for: Lcom/android/hwcamera/Camera;->mCameraState:I
@@ -79,32 +79,32 @@
 
     if-ne v6, v7, :cond_1
 
-    .line 1941
+    .line 1943
     const-string v4, "Camera"
 
     const-string v5, "Don\'t capture, it\'s SNAPSHOT_IN_PROGRESS!"
 
     invoke-static {v4, v5}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2025
+    .line 2027
     :cond_0
     :goto_0
     return-void
 
-    .line 1944
+    .line 1946
     :cond_1
     iget-object v6, p0, Lcom/android/hwcamera/Camera$ImageCapture;->this$0:Lcom/android/hwcamera/Camera;
 
     #setter for: Lcom/android/hwcamera/Camera;->mCameraState:I
     invoke-static {v6, v7}, Lcom/android/hwcamera/Camera;->access$9402(Lcom/android/hwcamera/Camera;I)I
 
-    .line 1945
+    .line 1947
     iget-object v6, p0, Lcom/android/hwcamera/Camera$ImageCapture;->this$0:Lcom/android/hwcamera/Camera;
 
     #setter for: Lcom/android/hwcamera/Camera;->mJpegImageData:[B
     invoke-static {v6, v10}, Lcom/android/hwcamera/Camera;->access$7102(Lcom/android/hwcamera/Camera;[B)[B
 
-    .line 1949
+    .line 1951
     iget-object v6, p0, Lcom/android/hwcamera/Camera$ImageCapture;->this$0:Lcom/android/hwcamera/Camera;
 
     #getter for: Lcom/android/hwcamera/Camera;->mShootingMode:I
@@ -114,7 +114,7 @@
 
     if-ne v6, v5, :cond_6
 
-    .line 1952
+    .line 1954
     iget-object v6, p0, Lcom/android/hwcamera/Camera$ImageCapture;->this$0:Lcom/android/hwcamera/Camera;
 
     #getter for: Lcom/android/hwcamera/Camera;->mParameters:Landroid/hardware/Camera$Parameters;
@@ -124,7 +124,7 @@
 
     invoke-virtual {v6, v9}, Landroid/hardware/Camera$Parameters;->setRotation(I)V
 
-    .line 1959
+    .line 1961
     :goto_1
     iget-object v6, p0, Lcom/android/hwcamera/Camera$ImageCapture;->this$0:Lcom/android/hwcamera/Camera;
 
@@ -137,7 +137,7 @@
 
     move-result-object v2
 
-    .line 1960
+    .line 1962
     .local v2, loc:Landroid/location/Location;
     iget-object v6, p0, Lcom/android/hwcamera/Camera$ImageCapture;->this$0:Lcom/android/hwcamera/Camera;
 
@@ -148,7 +148,7 @@
 
     if-eqz v6, :cond_7
 
-    .line 1961
+    .line 1963
     iget-object v6, p0, Lcom/android/hwcamera/Camera$ImageCapture;->this$0:Lcom/android/hwcamera/Camera;
 
     #getter for: Lcom/android/hwcamera/Camera;->mParameters:Landroid/hardware/Camera$Parameters;
@@ -158,20 +158,20 @@
 
     invoke-static {v6, v2}, Lcom/android/hwcamera/Util;->setGpsParameters(Landroid/hardware/Camera$Parameters;Landroid/location/Location;)V
 
-    .line 1962
+    .line 1964
     iget-object v6, p0, Lcom/android/hwcamera/Camera$ImageCapture;->this$0:Lcom/android/hwcamera/Camera;
 
     #setter for: Lcom/android/hwcamera/Camera;->mLocationState:Z
     invoke-static {v6, v5}, Lcom/android/hwcamera/Camera;->access$5802(Lcom/android/hwcamera/Camera;Z)Z
 
-    .line 1966
+    .line 1968
     :goto_2
     invoke-static {v9}, Lcom/android/hwcamera/Util;->setBlinkDetection(Z)V
 
-    .line 1967
+    .line 1969
     invoke-static {}, Lcom/android/hwcamera/Util;->stopFaceDetection()V
 
-    .line 1968
+    .line 1970
     iget-object v6, p0, Lcom/android/hwcamera/Camera$ImageCapture;->this$0:Lcom/android/hwcamera/Camera;
 
     #getter for: Lcom/android/hwcamera/Camera;->mHandler:Landroid/os/Handler;
@@ -183,7 +183,7 @@
 
     invoke-virtual {v6, v7}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
-    .line 1969
+    .line 1971
     iget-object v6, p0, Lcom/android/hwcamera/Camera$ImageCapture;->this$0:Lcom/android/hwcamera/Camera;
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
@@ -193,7 +193,7 @@
     #setter for: Lcom/android/hwcamera/Camera;->mCaptureStartTime:J
     invoke-static {v6, v7, v8}, Lcom/android/hwcamera/Camera;->access$5402(Lcom/android/hwcamera/Camera;J)J
 
-    .line 1970
+    .line 1972
     iget-object v6, p0, Lcom/android/hwcamera/Camera$ImageCapture;->this$0:Lcom/android/hwcamera/Camera;
 
     #getter for: Lcom/android/hwcamera/Camera;->mCaptureStartTime:J
@@ -207,7 +207,7 @@
 
     if-eqz v6, :cond_2
 
-    .line 1971
+    .line 1973
     const-string v6, "yyyy:MM:dd kk:mm:ss"
 
     iget-object v7, p0, Lcom/android/hwcamera/Camera$ImageCapture;->this$0:Lcom/android/hwcamera/Camera;
@@ -225,7 +225,7 @@
 
     move-result-object v0
 
-    .line 1972
+    .line 1974
     .local v0, datetime:Ljava/lang/String;
     const-string v6, "Camera"
 
@@ -249,7 +249,7 @@
 
     invoke-static {v6, v7}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1975
+    .line 1977
     .end local v0           #datetime:Ljava/lang/String;
     :cond_2
     iget-object v6, p0, Lcom/android/hwcamera/Camera$ImageCapture;->this$0:Lcom/android/hwcamera/Camera;
@@ -268,7 +268,7 @@
 
     invoke-virtual {v6, v7}, Lcom/android/hwcamera/HwCamera;->setParameters(Landroid/hardware/Camera$Parameters;)V
 
-    .line 1976
+    .line 1978
     iget-object v6, p0, Lcom/android/hwcamera/Camera$ImageCapture;->this$0:Lcom/android/hwcamera/Camera;
 
     #getter for: Lcom/android/hwcamera/Camera;->mImageSaver:Lcom/android/hwcamera/Camera$ImageSaver;
@@ -278,7 +278,7 @@
 
     invoke-virtual {v6, v5}, Lcom/android/hwcamera/Camera$ImageSaver;->resetSavedPictureCnt(I)V
 
-    .line 1977
+    .line 1979
     iget-object v6, p0, Lcom/android/hwcamera/Camera$ImageCapture;->this$0:Lcom/android/hwcamera/Camera;
 
     iget-object v7, p0, Lcom/android/hwcamera/Camera$ImageCapture;->this$0:Lcom/android/hwcamera/Camera;
@@ -295,10 +295,10 @@
 
     if-eqz v6, :cond_8
 
-    .line 1978
+    .line 1980
     const/4 v1, 0x0
 
-    .line 1979
+    .line 1981
     .local v1, interval:I
     iget-object v5, p0, Lcom/android/hwcamera/Camera$ImageCapture;->this$0:Lcom/android/hwcamera/Camera;
 
@@ -320,15 +320,15 @@
 
     if-ne v5, v4, :cond_4
 
-    .line 1980
+    .line 1982
     :cond_3
     const/16 v1, 0xfa
 
-    .line 1983
+    .line 1985
     :cond_4
     invoke-static {v1}, Lcom/android/hwcamera/Util;->setBurstShootingInterval(I)Z
 
-    .line 1984
+    .line 1986
     iget-object v4, p0, Lcom/android/hwcamera/Camera$ImageCapture;->this$0:Lcom/android/hwcamera/Camera;
 
     #getter for: Lcom/android/hwcamera/Camera;->mMaxBurstPicNumber:I
@@ -338,7 +338,7 @@
 
     invoke-static {v4}, Lcom/android/hwcamera/Util;->setBurstTotalCaptures(I)V
 
-    .line 1985
+    .line 1987
     iget-object v4, p0, Lcom/android/hwcamera/Camera$ImageCapture;->this$0:Lcom/android/hwcamera/Camera;
 
     #getter for: Lcom/android/hwcamera/Camera;->mImageSaver:Lcom/android/hwcamera/Camera$ImageSaver;
@@ -355,7 +355,7 @@
 
     invoke-virtual {v4, v5}, Lcom/android/hwcamera/Camera$ImageSaver;->resetSavedPictureCnt(I)V
 
-    .line 1986
+    .line 1988
     iget-object v4, p0, Lcom/android/hwcamera/Camera$ImageCapture;->this$0:Lcom/android/hwcamera/Camera;
 
     #getter for: Lcom/android/hwcamera/Camera;->mCameraDevice:Lcom/android/hwcamera/HwCamera;
@@ -378,7 +378,7 @@
 
     invoke-virtual {v4, v5, v10, v10, v6}, Lcom/android/hwcamera/HwCamera;->takePicture(Landroid/hardware/Camera$ShutterCallback;Landroid/hardware/Camera$PictureCallback;Landroid/hardware/Camera$PictureCallback;Landroid/hardware/Camera$PictureCallback;)V
 
-    .line 2011
+    .line 2013
     .end local v1           #interval:I
     :goto_3
     const-string v4, "ro.camera.support.led"
@@ -397,7 +397,7 @@
 
     if-eqz v4, :cond_5
 
-    .line 2012
+    .line 2014
     iget-object v4, p0, Lcom/android/hwcamera/Camera$ImageCapture;->this$0:Lcom/android/hwcamera/Camera;
 
     #getter for: Lcom/android/hwcamera/Camera;->mNM:Landroid/app/NotificationManager;
@@ -407,7 +407,7 @@
 
     invoke-static {v4}, Lcom/android/hwcamera/LedLightManager;->ledoff(Landroid/app/NotificationManager;)V
 
-    .line 2013
+    .line 2015
     iget-object v4, p0, Lcom/android/hwcamera/Camera$ImageCapture;->this$0:Lcom/android/hwcamera/Camera;
 
     #getter for: Lcom/android/hwcamera/Camera;->mNM:Landroid/app/NotificationManager;
@@ -417,7 +417,7 @@
 
     invoke-static {v4}, Lcom/android/hwcamera/LedLightManager;->ledOn(Landroid/app/NotificationManager;)V
 
-    .line 2016
+    .line 2018
     :cond_5
     iget-object v4, p0, Lcom/android/hwcamera/Camera$ImageCapture;->this$0:Lcom/android/hwcamera/Camera;
 
@@ -428,7 +428,7 @@
 
     if-lez v4, :cond_0
 
-    .line 2020
+    .line 2022
     iget-object v4, p0, Lcom/android/hwcamera/Camera$ImageCapture;->this$0:Lcom/android/hwcamera/Camera;
 
     #getter for: Lcom/android/hwcamera/Camera;->mOrientation:I
@@ -440,7 +440,7 @@
 
     if-eq v4, v5, :cond_0
 
-    .line 2021
+    .line 2023
     iget-object v4, p0, Lcom/android/hwcamera/Camera$ImageCapture;->this$0:Lcom/android/hwcamera/Camera;
 
     iget-object v5, p0, Lcom/android/hwcamera/Camera$ImageCapture;->this$0:Lcom/android/hwcamera/Camera;
@@ -455,7 +455,7 @@
 
     goto/16 :goto_0
 
-    .line 1954
+    .line 1956
     .end local v2           #loc:Landroid/location/Location;
     :cond_6
     iget-object v6, p0, Lcom/android/hwcamera/Camera$ImageCapture;->this$0:Lcom/android/hwcamera/Camera;
@@ -483,7 +483,7 @@
 
     goto/16 :goto_1
 
-    .line 1964
+    .line 1966
     .restart local v2       #loc:Landroid/location/Location;
     :cond_7
     iget-object v6, p0, Lcom/android/hwcamera/Camera$ImageCapture;->this$0:Lcom/android/hwcamera/Camera;
@@ -493,7 +493,7 @@
 
     goto/16 :goto_2
 
-    .line 1988
+    .line 1990
     :cond_8
     iget-object v6, p0, Lcom/android/hwcamera/Camera$ImageCapture;->this$0:Lcom/android/hwcamera/Camera;
 
@@ -506,13 +506,13 @@
 
     if-ne v6, v7, :cond_b
 
-    .line 1989
+    .line 1991
     iget-object v6, p0, Lcom/android/hwcamera/Camera$ImageCapture;->this$0:Lcom/android/hwcamera/Camera;
 
     #setter for: Lcom/android/hwcamera/Camera;->mShowProcess:Z
     invoke-static {v6, v5}, Lcom/android/hwcamera/Camera;->access$9902(Lcom/android/hwcamera/Camera;Z)Z
 
-    .line 1990
+    .line 1992
     iget-object v6, p0, Lcom/android/hwcamera/Camera$ImageCapture;->this$0:Lcom/android/hwcamera/Camera;
 
     #getter for: Lcom/android/hwcamera/Camera;->mImageSaver:Lcom/android/hwcamera/Camera$ImageSaver;
@@ -532,14 +532,14 @@
     :goto_4
     invoke-virtual {v6, v4}, Lcom/android/hwcamera/Camera$ImageSaver;->resetSavedPictureCnt(I)V
 
-    .line 1991
+    .line 1993
     invoke-static {}, Lcom/android/hwcamera/Util;->hasHwExtCamera()Z
 
     move-result v4
 
     if-eqz v4, :cond_a
 
-    .line 1992
+    .line 1994
     iget-object v4, p0, Lcom/android/hwcamera/Camera$ImageCapture;->this$0:Lcom/android/hwcamera/Camera;
 
     #getter for: Lcom/android/hwcamera/Camera;->mCameraDevice:Lcom/android/hwcamera/HwCamera;
@@ -560,10 +560,10 @@
     :cond_9
     move v4, v5
 
-    .line 1990
+    .line 1992
     goto :goto_4
 
-    .line 1994
+    .line 1996
     :cond_a
     iget-object v4, p0, Lcom/android/hwcamera/Camera$ImageCapture;->this$0:Lcom/android/hwcamera/Camera;
 
@@ -603,7 +603,7 @@
 
     goto/16 :goto_3
 
-    .line 1997
+    .line 1999
     :cond_b
     iget-object v4, p0, Lcom/android/hwcamera/Camera$ImageCapture;->this$0:Lcom/android/hwcamera/Camera;
 
@@ -616,13 +616,13 @@
 
     if-ne v4, v6, :cond_c
 
-    .line 1998
+    .line 2000
     iget-object v4, p0, Lcom/android/hwcamera/Camera$ImageCapture;->this$0:Lcom/android/hwcamera/Camera;
 
     #setter for: Lcom/android/hwcamera/Camera;->mShowProcess:Z
     invoke-static {v4, v5}, Lcom/android/hwcamera/Camera;->access$9902(Lcom/android/hwcamera/Camera;Z)Z
 
-    .line 1999
+    .line 2001
     iget-object v4, p0, Lcom/android/hwcamera/Camera$ImageCapture;->this$0:Lcom/android/hwcamera/Camera;
 
     #getter for: Lcom/android/hwcamera/Camera;->mCameraDevice:Lcom/android/hwcamera/HwCamera;
@@ -647,7 +647,7 @@
 
     goto/16 :goto_3
 
-    .line 2001
+    .line 2003
     :cond_c
     iget-object v4, p0, Lcom/android/hwcamera/Camera$ImageCapture;->this$0:Lcom/android/hwcamera/Camera;
 
@@ -658,7 +658,7 @@
 
     if-ne v4, v5, :cond_d
 
-    .line 2002
+    .line 2004
     sget v4, Lcom/android/hwcamera/hwui/PanoramaBar;->PANORAMA_MINI_PIC_HEIGHT:I
 
     iget-object v5, p0, Lcom/android/hwcamera/Camera$ImageCapture;->this$0:Lcom/android/hwcamera/Camera;
@@ -667,7 +667,7 @@
 
     move-result v3
 
-    .line 2003
+    .line 2005
     .local v3, panorama_mini_pic_height:I
     const/4 v4, 0x6
 
@@ -681,7 +681,7 @@
 
     invoke-static {v3, v4, v5, v10, v6}, Lcom/android/hwcamera/Util;->startPanorama(IIFLandroid/hardware/Camera$PictureCallback;Landroid/hardware/Camera$PictureCallback;)V
 
-    .line 2005
+    .line 2007
     iget-object v4, p0, Lcom/android/hwcamera/Camera$ImageCapture;->this$0:Lcom/android/hwcamera/Camera;
 
     #getter for: Lcom/android/hwcamera/Camera;->mHandler:Landroid/os/Handler;
@@ -695,7 +695,7 @@
 
     goto/16 :goto_3
 
-    .line 2007
+    .line 2009
     .end local v3           #panorama_mini_pic_height:I
     :cond_d
     iget-object v4, p0, Lcom/android/hwcamera/Camera$ImageCapture;->this$0:Lcom/android/hwcamera/Camera;
