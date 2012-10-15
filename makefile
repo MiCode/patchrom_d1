@@ -15,7 +15,7 @@ local-previous-target-dir := ~/workspace/ota_base/d1
 local-miui-modified-apps := MiuiSystemUI MiuiHome Mms Phone Settings ThemeManager
 
 # All apps from original ZIP, but has smali files chanded
-local-modified-apps := HwCamera SettingsProvider PowerManagement MediaProvider
+local-modified-apps := HwCamera SettingsProvider MediaProvider
 
 # All apks from MIUI
 local-miui-removed-apps     := SettingsProvider MediaProvider Bluetooth 
@@ -37,9 +37,9 @@ include $(PORT_BUILD)/porting.mk
 
 # To define any local-target
 local-zip-misc:
-	cp other/build_b118.prop $(ZIP_DIR)/system/build.prop
+	cp other/build_b128.prop $(ZIP_DIR)/system/build.prop
 	cp other/Generic.kl $(ZIP_DIR)/system/usr/keylayout/
-	cp other/boot-b118-rooted.img $(ZIP_DIR)/boot.img
+	cp other/boot-b128-rooted.img $(ZIP_DIR)/boot.img
 	cp other/StockSettings.apk $(ZIP_DIR)/system/app/
 	cp other/Settings_ex.apk $(ZIP_DIR)/system/app/
 
