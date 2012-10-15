@@ -38,7 +38,7 @@ include $(PORT_BUILD)/porting.mk
 # To define any local-target
 local-zip-misc:
 	cp other/build_b128.prop $(ZIP_DIR)/system/build.prop
-	cp other/Generic.kl $(ZIP_DIR)/system/usr/keylayout/
+	#cp other/Generic.kl $(ZIP_DIR)/system/usr/keylayout/
 	cp other/boot-b128-rooted.img $(ZIP_DIR)/boot.img
 	cp other/StockSettings.apk $(ZIP_DIR)/system/app/
 	cp other/Settings_ex.apk $(ZIP_DIR)/system/app/
