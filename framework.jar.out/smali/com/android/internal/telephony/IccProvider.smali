@@ -8,7 +8,7 @@
 
 .field private static final ADN:I = 0x1
 
-.field private static final DBG:Z = false
+.field static final DBG:Z = false
 
 .field private static final FDN:I = 0x2
 
@@ -28,7 +28,7 @@
 
 .field private static final TAG:Ljava/lang/String; = "IccProvider"
 
-.field private static final URL_MATCHER:Landroid/content/UriMatcher;
+.field static final URL_MATCHER:Landroid/content/UriMatcher;
 
 
 # direct methods
@@ -733,7 +733,7 @@
     return-void
 .end method
 
-.method private log(Ljava/lang/String;)V
+.method log(Ljava/lang/String;)V
     .locals 3
     .parameter "msg"
 
@@ -783,6 +783,13 @@
 
     .line 254
     .local v1, retVal:Ljava/lang/String;
+    const/4 v2, 0x1
+
+    if-gt v0, v2, :cond_miui_add1
+
+    return-object v1
+
+    :cond_miui_add1
     const/4 v2, 0x0
 
     invoke-virtual {p1, v2}, Ljava/lang/String;->charAt(I)C
