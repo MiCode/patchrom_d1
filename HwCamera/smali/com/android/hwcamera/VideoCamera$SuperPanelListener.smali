@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 3162
+    .line 3157
     iput-object p1, p0, Lcom/android/hwcamera/VideoCamera$SuperPanelListener;->this$0:Lcom/android/hwcamera/VideoCamera;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .parameter "x1"
 
     .prologue
-    .line 3162
+    .line 3157
     invoke-direct {p0, p1}, Lcom/android/hwcamera/VideoCamera$SuperPanelListener;-><init>(Lcom/android/hwcamera/VideoCamera;)V
 
     return-void
@@ -54,13 +54,13 @@
     .parameter "entryKey"
 
     .prologue
-    .line 3245
+    .line 3240
     iget-object v0, p0, Lcom/android/hwcamera/VideoCamera$SuperPanelListener;->this$0:Lcom/android/hwcamera/VideoCamera;
 
     #calls: Lcom/android/hwcamera/VideoCamera;->galleryExStart(Ljava/lang/String;)V
     invoke-static {v0, p1}, Lcom/android/hwcamera/VideoCamera;->access$6800(Lcom/android/hwcamera/VideoCamera;Ljava/lang/String;)V
 
-    .line 3246
+    .line 3241
     return-void
 .end method
 
@@ -75,16 +75,16 @@
 
     const/4 v1, 0x0
 
-    .line 3249
+    .line 3244
     if-eqz p1, :cond_0
 
-    .line 3250
+    .line 3245
     iget-object v0, p0, Lcom/android/hwcamera/VideoCamera$SuperPanelListener;->this$0:Lcom/android/hwcamera/VideoCamera;
 
     #calls: Lcom/android/hwcamera/VideoCamera;->setFlashSwitchIconVisibility(I)V
     invoke-static {v0, v2}, Lcom/android/hwcamera/VideoCamera;->access$6900(Lcom/android/hwcamera/VideoCamera;I)V
 
-    .line 3251
+    .line 3246
     iget-object v0, p0, Lcom/android/hwcamera/VideoCamera$SuperPanelListener;->this$0:Lcom/android/hwcamera/VideoCamera;
 
     invoke-virtual {v0, v3}, Lcom/android/hwcamera/VideoCamera;->findViewById(I)Landroid/view/View;
@@ -93,11 +93,11 @@
 
     invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
 
-    .line 3259
+    .line 3254
     :goto_0
     return-void
 
-    .line 3252
+    .line 3247
     :cond_0
     iget-object v0, p0, Lcom/android/hwcamera/VideoCamera$SuperPanelListener;->this$0:Lcom/android/hwcamera/VideoCamera;
 
@@ -108,7 +108,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 3253
+    .line 3248
     iget-object v0, p0, Lcom/android/hwcamera/VideoCamera$SuperPanelListener;->this$0:Lcom/android/hwcamera/VideoCamera;
 
     #calls: Lcom/android/hwcamera/VideoCamera;->galleryExInit()V
@@ -116,14 +116,14 @@
 
     goto :goto_0
 
-    .line 3256
+    .line 3251
     :cond_1
     iget-object v0, p0, Lcom/android/hwcamera/VideoCamera$SuperPanelListener;->this$0:Lcom/android/hwcamera/VideoCamera;
 
     #calls: Lcom/android/hwcamera/VideoCamera;->setFlashSwitchIconVisibility(I)V
     invoke-static {v0, v1}, Lcom/android/hwcamera/VideoCamera;->access$6900(Lcom/android/hwcamera/VideoCamera;I)V
 
-    .line 3257
+    .line 3252
     iget-object v0, p0, Lcom/android/hwcamera/VideoCamera$SuperPanelListener;->this$0:Lcom/android/hwcamera/VideoCamera;
 
     invoke-virtual {v0, v3}, Lcom/android/hwcamera/VideoCamera;->findViewById(I)Landroid/view/View;
@@ -139,13 +139,13 @@
     .locals 1
 
     .prologue
-    .line 3241
+    .line 3236
     iget-object v0, p0, Lcom/android/hwcamera/VideoCamera$SuperPanelListener;->this$0:Lcom/android/hwcamera/VideoCamera;
 
     #calls: Lcom/android/hwcamera/VideoCamera;->restorePreferences()V
     invoke-static {v0}, Lcom/android/hwcamera/VideoCamera;->access$6700(Lcom/android/hwcamera/VideoCamera;)V
 
-    .line 3242
+    .line 3237
     return-void
 .end method
 
@@ -155,21 +155,21 @@
     .parameter "value"
 
     .prologue
-    .line 3164
+    .line 3159
     if-nez p1, :cond_0
 
-    .line 3165
+    .line 3160
     const-string v5, "videocamera"
 
     const-string v6, " KEY is null"
 
     invoke-static {v5, v6}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3238
+    .line 3233
     :goto_0
     return-void
 
-    .line 3169
+    .line 3164
     :cond_0
     const-string v5, "pref_camera_save_location_key"
 
@@ -179,7 +179,7 @@
 
     if-eqz v5, :cond_2
 
-    .line 3170
+    .line 3165
     iget-object v5, p0, Lcom/android/hwcamera/VideoCamera$SuperPanelListener;->this$0:Lcom/android/hwcamera/VideoCamera;
 
     #getter for: Lcom/android/hwcamera/VideoCamera;->mPreferences:Lcom/android/hwcamera/ComboPreferences;
@@ -193,7 +193,7 @@
 
     invoke-static {v5, p2}, Lcom/android/hwcamera/CameraSettings;->writPreferredSaveLocation(Landroid/content/SharedPreferences;Ljava/lang/String;)V
 
-    .line 3171
+    .line 3166
     const-string v5, "phone"
 
     invoke-virtual {p2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -202,10 +202,10 @@
 
     if-eqz v5, :cond_1
 
-    .line 3172
+    .line 3167
     invoke-static {}, Lcom/android/hwcamera/Storage;->switchToInternalSdCard()V
 
-    .line 3176
+    .line 3171
     :goto_1
     iget-object v5, p0, Lcom/android/hwcamera/VideoCamera$SuperPanelListener;->this$0:Lcom/android/hwcamera/VideoCamera;
 
@@ -214,13 +214,13 @@
 
     goto :goto_0
 
-    .line 3174
+    .line 3169
     :cond_1
     invoke-static {}, Lcom/android/hwcamera/Storage;->switchToExternalSdCard()V
 
     goto :goto_1
 
-    .line 3178
+    .line 3173
     :cond_2
     const-string v5, "pref_video_gps_key"
 
@@ -230,7 +230,7 @@
 
     if-eqz v5, :cond_4
 
-    .line 3179
+    .line 3174
     const-string v5, "on"
 
     invoke-virtual {p2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -239,7 +239,7 @@
 
     if-eqz v5, :cond_4
 
-    .line 3181
+    .line 3176
     const-string v5, "ro.camera.show.eula"
 
     const-string v6, "0"
@@ -256,7 +256,7 @@
 
     if-eqz v5, :cond_9
 
-    .line 3182
+    .line 3177
     iget-object v5, p0, Lcom/android/hwcamera/VideoCamera$SuperPanelListener;->this$0:Lcom/android/hwcamera/VideoCamera;
 
     #getter for: Lcom/android/hwcamera/VideoCamera;->mEulaPreference:Landroid/content/SharedPreferences;
@@ -268,11 +268,11 @@
 
     move-result v3
 
-    .line 3183
+    .line 3178
     .local v3, isFirstTime:Z
     if-eqz v3, :cond_3
 
-    .line 3184
+    .line 3179
     iget-object v5, p0, Lcom/android/hwcamera/VideoCamera$SuperPanelListener;->this$0:Lcom/android/hwcamera/VideoCamera;
 
     #calls: Lcom/android/hwcamera/VideoCamera;->showEulaDialog()V
@@ -280,7 +280,7 @@
 
     goto :goto_0
 
-    .line 3187
+    .line 3182
     :cond_3
     iget-object v5, p0, Lcom/android/hwcamera/VideoCamera$SuperPanelListener;->this$0:Lcom/android/hwcamera/VideoCamera;
 
@@ -300,17 +300,17 @@
 
     move-result v4
 
-    .line 3188
+    .line 3183
     .local v4, state:Z
     if-nez v4, :cond_4
 
-    .line 3189
+    .line 3184
     iget-object v5, p0, Lcom/android/hwcamera/VideoCamera$SuperPanelListener;->this$0:Lcom/android/hwcamera/VideoCamera;
 
     #calls: Lcom/android/hwcamera/VideoCamera;->showConfirmGpsDialog()V
     invoke-static {v5}, Lcom/android/hwcamera/VideoCamera;->access$6400(Lcom/android/hwcamera/VideoCamera;)V
 
-    .line 3202
+    .line 3197
     .end local v3           #isFirstTime:Z
     .end local v4           #state:Z
     :cond_4
@@ -322,7 +322,7 @@
 
     if-eqz v5, :cond_5
 
-    .line 3203
+    .line 3198
     iget-object v5, p0, Lcom/android/hwcamera/VideoCamera$SuperPanelListener;->this$0:Lcom/android/hwcamera/VideoCamera;
 
     #getter for: Lcom/android/hwcamera/VideoCamera;->mCameraDevice:Lcom/android/hwcamera/HwCamera;
@@ -342,7 +342,7 @@
 
     invoke-static {v5, v6}, Lcom/android/hwcamera/Util;->setSilentOption(Ljava/lang/Object;Z)V
 
-    .line 3205
+    .line 3200
     :cond_5
     iget-object v5, p0, Lcom/android/hwcamera/VideoCamera$SuperPanelListener;->this$0:Lcom/android/hwcamera/VideoCamera;
 
@@ -355,7 +355,7 @@
 
     move-result-object v2
 
-    .line 3206
+    .line 3201
     .local v2, editor:Landroid/content/SharedPreferences$Editor;
     const-string v5, "pref_video_coloreffect_key"
 
@@ -365,7 +365,7 @@
 
     if-eqz v5, :cond_a
 
-    .line 3207
+    .line 3202
     iget-object v5, p0, Lcom/android/hwcamera/VideoCamera$SuperPanelListener;->this$0:Lcom/android/hwcamera/VideoCamera;
 
     #getter for: Lcom/android/hwcamera/VideoCamera;->mPreferences:Lcom/android/hwcamera/ComboPreferences;
@@ -387,7 +387,7 @@
 
     move-result-object v0
 
-    .line 3209
+    .line 3204
     .local v0, colorvalue:Ljava/lang/String;
     const-string v5, "none"
 
@@ -405,14 +405,14 @@
 
     if-nez v5, :cond_6
 
-    .line 3211
+    .line 3206
     const-string v5, "pref_video_distortion_key"
 
     const-string v6, "none"
 
     invoke-interface {v2, v5, v6}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
-    .line 3213
+    .line 3208
     :cond_6
     iget-object v5, p0, Lcom/android/hwcamera/VideoCamera$SuperPanelListener;->this$0:Lcom/android/hwcamera/VideoCamera;
 
@@ -429,7 +429,7 @@
 
     if-nez v5, :cond_7
 
-    .line 3214
+    .line 3209
     iget-object v5, p0, Lcom/android/hwcamera/VideoCamera$SuperPanelListener;->this$0:Lcom/android/hwcamera/VideoCamera;
 
     #getter for: Lcom/android/hwcamera/VideoCamera;->mSuperPanel:Lcom/android/hwcamera/hwui/SuperPanel;
@@ -447,16 +447,16 @@
 
     invoke-virtual {v5, v6, v7}, Lcom/android/hwcamera/hwui/SuperPanel;->setPanelItemEnable(IZ)V
 
-    .line 3225
+    .line 3220
     .end local v0           #colorvalue:Ljava/lang/String;
     :cond_7
     :goto_2
     invoke-interface {v2, p1, p2}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
-    .line 3226
+    .line 3221
     invoke-interface {v2}, Landroid/content/SharedPreferences$Editor;->apply()V
 
-    .line 3227
+    .line 3222
     const-string v5, "pref_camera_video_flashmode_key"
 
     invoke-virtual {p1, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -465,7 +465,7 @@
 
     if-eqz v5, :cond_b
 
-    .line 3228
+    .line 3223
     iget-object v5, p0, Lcom/android/hwcamera/VideoCamera$SuperPanelListener;->this$0:Lcom/android/hwcamera/VideoCamera;
 
     #getter for: Lcom/android/hwcamera/VideoCamera;->mParameters:Landroid/hardware/Camera$Parameters;
@@ -475,7 +475,7 @@
 
     invoke-virtual {v5, p2}, Landroid/hardware/Camera$Parameters;->setFlashMode(Ljava/lang/String;)V
 
-    .line 3237
+    .line 3232
     :cond_8
     :goto_3
     iget-object v5, p0, Lcom/android/hwcamera/VideoCamera$SuperPanelListener;->this$0:Lcom/android/hwcamera/VideoCamera;
@@ -485,7 +485,7 @@
 
     goto/16 :goto_0
 
-    .line 3193
+    .line 3188
     .end local v2           #editor:Landroid/content/SharedPreferences$Editor;
     :cond_9
     iget-object v5, p0, Lcom/android/hwcamera/VideoCamera$SuperPanelListener;->this$0:Lcom/android/hwcamera/VideoCamera;
@@ -506,11 +506,11 @@
 
     move-result v4
 
-    .line 3194
+    .line 3189
     .restart local v4       #state:Z
     if-nez v4, :cond_4
 
-    .line 3195
+    .line 3190
     iget-object v5, p0, Lcom/android/hwcamera/VideoCamera$SuperPanelListener;->this$0:Lcom/android/hwcamera/VideoCamera;
 
     #calls: Lcom/android/hwcamera/VideoCamera;->showConfirmGpsDialog()V
@@ -518,7 +518,7 @@
 
     goto/16 :goto_0
 
-    .line 3217
+    .line 3212
     .end local v4           #state:Z
     .restart local v2       #editor:Landroid/content/SharedPreferences$Editor;
     :cond_a
@@ -530,7 +530,7 @@
 
     if-eqz v5, :cond_7
 
-    .line 3218
+    .line 3213
     iget-object v5, p0, Lcom/android/hwcamera/VideoCamera$SuperPanelListener;->this$0:Lcom/android/hwcamera/VideoCamera;
 
     #getter for: Lcom/android/hwcamera/VideoCamera;->mPreferences:Lcom/android/hwcamera/ComboPreferences;
@@ -552,7 +552,7 @@
 
     move-result-object v1
 
-    .line 3220
+    .line 3215
     .local v1, distortion:Ljava/lang/String;
     const-string v5, "none"
 
@@ -570,7 +570,7 @@
 
     if-nez v5, :cond_7
 
-    .line 3222
+    .line 3217
     const-string v5, "pref_video_coloreffect_key"
 
     const-string v6, "none"
@@ -579,7 +579,7 @@
 
     goto :goto_2
 
-    .line 3229
+    .line 3224
     .end local v1           #distortion:Ljava/lang/String;
     :cond_b
     const-string v5, "pref_video_quality_key"
@@ -590,7 +590,7 @@
 
     if-eqz v5, :cond_c
 
-    .line 3230
+    .line 3225
     iget-object v5, p0, Lcom/android/hwcamera/VideoCamera$SuperPanelListener;->this$0:Lcom/android/hwcamera/VideoCamera;
 
     #getter for: Lcom/android/hwcamera/VideoCamera;->mSuperPanel:Lcom/android/hwcamera/hwui/SuperPanel;
@@ -600,7 +600,7 @@
 
     if-eqz v5, :cond_8
 
-    .line 3231
+    .line 3226
     iget-object v5, p0, Lcom/android/hwcamera/VideoCamera$SuperPanelListener;->this$0:Lcom/android/hwcamera/VideoCamera;
 
     #getter for: Lcom/android/hwcamera/VideoCamera;->mSuperPanel:Lcom/android/hwcamera/hwui/SuperPanel;
@@ -616,7 +616,7 @@
 
     goto :goto_3
 
-    .line 3234
+    .line 3229
     :cond_c
     const-string v5, "pref_video_whitebalance_key"
 
@@ -626,7 +626,7 @@
 
     if-eqz v5, :cond_8
 
-    .line 3235
+    .line 3230
     iget-object v5, p0, Lcom/android/hwcamera/VideoCamera$SuperPanelListener;->this$0:Lcom/android/hwcamera/VideoCamera;
 
     #getter for: Lcom/android/hwcamera/VideoCamera;->mSuperPanel:Lcom/android/hwcamera/hwui/SuperPanel;
@@ -645,6 +645,6 @@
     .locals 0
 
     .prologue
-    .line 3261
+    .line 3256
     return-void
 .end method

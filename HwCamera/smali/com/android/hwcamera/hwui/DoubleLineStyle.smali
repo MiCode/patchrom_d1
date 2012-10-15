@@ -78,7 +78,7 @@
     invoke-virtual {p0, v5}, Lcom/android/hwcamera/hwui/DoubleLineStyle;->setGravity(I)V
 
     .line 38
-    const v5, 0x7f0200a5
+    const v5, 0x7f0200aa
 
     invoke-virtual {p0, v5}, Lcom/android/hwcamera/hwui/DoubleLineStyle;->setBackgroundResource(I)V
 

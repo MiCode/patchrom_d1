@@ -116,7 +116,7 @@
     .line 40
     iget-object v4, p0, Lcom/android/hwcamera/hwui/IconTextView;->mIcon:Landroid/widget/ImageView;
 
-    const v5, 0x7f02004f
+    const v5, 0x7f020052
 
     invoke-virtual {v4, v5}, Landroid/widget/ImageView;->setBackgroundResource(I)V
 
@@ -197,7 +197,7 @@
     .line 63
     iget-object v0, p0, Lcom/android/hwcamera/hwui/IconTextView;->mIcon:Landroid/widget/ImageView;
 
-    const v1, 0x7f020047
+    const v1, 0x7f02004a
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setBackgroundResource(I)V
 
@@ -209,7 +209,7 @@
     :cond_0
     iget-object v0, p0, Lcom/android/hwcamera/hwui/IconTextView;->mIcon:Landroid/widget/ImageView;
 
-    const v1, 0x7f02004f
+    const v1, 0x7f020052
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setBackgroundResource(I)V
 

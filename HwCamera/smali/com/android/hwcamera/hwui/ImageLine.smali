@@ -50,7 +50,7 @@
     .line 17
     iget-object v0, p0, Lcom/android/hwcamera/hwui/ImageLine;->mLine:Landroid/widget/ImageView;
 
-    const v1, 0x7f02005d
+    const v1, 0x7f020060
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setBackgroundResource(I)V
 

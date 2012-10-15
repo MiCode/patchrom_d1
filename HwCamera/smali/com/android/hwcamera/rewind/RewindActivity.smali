@@ -658,7 +658,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0200b4
+    const v6, 0x7f0200b9
 
     invoke-static {v5, v6}, Landroid/graphics/BitmapFactory;->decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;
 
@@ -809,7 +809,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0200b3
+    const v6, 0x7f0200b8
 
     invoke-static {v5, v6, v1}, Landroid/graphics/BitmapFactory;->decodeResource(Landroid/content/res/Resources;ILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
 
@@ -1078,7 +1078,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f020088
+    const v5, 0x7f02008d
 
     invoke-static {v4, v5}, Landroid/graphics/BitmapFactory;->decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;
 
@@ -1090,7 +1090,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f020087
+    const v5, 0x7f02008c
 
     invoke-static {v4, v5}, Landroid/graphics/BitmapFactory;->decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;
 

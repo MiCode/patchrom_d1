@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 4810
+    .line 4812
     iput-object p1, p0, Lcom/android/hwcamera/Camera$8;->this$0:Lcom/android/hwcamera/Camera;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 2
 
     .prologue
-    .line 4812
+    .line 4814
     iget-object v0, p0, Lcom/android/hwcamera/Camera$8;->this$0:Lcom/android/hwcamera/Camera;
 
     const/4 v1, 0x2
@@ -49,6 +49,6 @@
     #calls: Lcom/android/hwcamera/Camera;->switchToOtherMode(I)Z
     invoke-static {v0, v1}, Lcom/android/hwcamera/Camera;->access$1800(Lcom/android/hwcamera/Camera;I)Z
 
-    .line 4813
+    .line 4815
     return-void
 .end method

@@ -439,24 +439,24 @@
     .parameter "elapsedRealtimeDeadline"
 
     .prologue
-    .line 385
+    .line 388
     iget-object v0, p0, Lcom/android/internal/policy/impl/PatternUnlockScreen;->mLockPatternView:Lcom/android/internal/widget/LockPatternView;
 
     invoke-virtual {v0}, Lcom/android/internal/widget/LockPatternView;->clearPattern()V
 
-    .line 386
+    .line 389
     iget-object v0, p0, Lcom/android/internal/policy/impl/PatternUnlockScreen;->mLockPatternView:Lcom/android/internal/widget/LockPatternView;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/android/internal/widget/LockPatternView;->setEnabled(Z)V
 
-    .line 387
+    .line 390
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v6
 
-    .line 388
+    .line 391
     .local v6, elapsedRealtime:J
     new-instance v0, Lcom/android/internal/policy/impl/PatternUnlockScreen$3;
 
@@ -474,7 +474,7 @@
 
     iput-object v0, p0, Lcom/android/internal/policy/impl/PatternUnlockScreen;->mCountdownTimer:Landroid/os/CountDownTimer;
 
-    .line 414
+    .line 417
     return-void
 .end method
 

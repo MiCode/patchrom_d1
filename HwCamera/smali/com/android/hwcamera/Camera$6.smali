@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 1896
+    .line 1898
     iput-object p1, p0, Lcom/android/hwcamera/Camera$6;->this$0:Lcom/android/hwcamera/Camera;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +42,7 @@
     .parameter "animation"
 
     .prologue
-    .line 1898
+    .line 1900
     iget-object v0, p0, Lcom/android/hwcamera/Camera$6;->this$0:Lcom/android/hwcamera/Camera;
 
     #getter for: Lcom/android/hwcamera/Camera;->mControlBarAnim:Landroid/view/animation/Animation;
@@ -52,7 +52,7 @@
 
     if-ne p1, v0, :cond_2
 
-    .line 1899
+    .line 1901
     iget-object v0, p0, Lcom/android/hwcamera/Camera$6;->this$0:Lcom/android/hwcamera/Camera;
 
     #getter for: Lcom/android/hwcamera/Camera;->mCurrentState:I
@@ -75,7 +75,7 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 1900
+    .line 1902
     :cond_0
     iget-object v0, p0, Lcom/android/hwcamera/Camera$6;->this$0:Lcom/android/hwcamera/Camera;
 
@@ -88,12 +88,12 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
-    .line 1907
+    .line 1909
     :cond_1
     :goto_0
     return-void
 
-    .line 1902
+    .line 1904
     :cond_2
     iget-object v0, p0, Lcom/android/hwcamera/Camera$6;->this$0:Lcom/android/hwcamera/Camera;
 
@@ -104,7 +104,7 @@
 
     if-ne p1, v0, :cond_3
 
-    .line 1903
+    .line 1905
     iget-object v0, p0, Lcom/android/hwcamera/Camera$6;->this$0:Lcom/android/hwcamera/Camera;
 
     #calls: Lcom/android/hwcamera/Camera;->galleryExClose()V
@@ -112,7 +112,7 @@
 
     goto :goto_0
 
-    .line 1904
+    .line 1906
     :cond_3
     iget-object v0, p0, Lcom/android/hwcamera/Camera$6;->this$0:Lcom/android/hwcamera/Camera;
 
@@ -123,7 +123,7 @@
 
     if-ne p1, v0, :cond_1
 
-    .line 1905
+    .line 1907
     iget-object v0, p0, Lcom/android/hwcamera/Camera$6;->this$0:Lcom/android/hwcamera/Camera;
 
     #getter for: Lcom/android/hwcamera/Camera;->mThumbnailView:Lcom/android/hwcamera/RotateImageView;
@@ -143,7 +143,7 @@
     .parameter "animation"
 
     .prologue
-    .line 1909
+    .line 1911
     return-void
 .end method
 
@@ -152,6 +152,6 @@
     .parameter "animation"
 
     .prologue
-    .line 1912
+    .line 1914
     return-void
 .end method

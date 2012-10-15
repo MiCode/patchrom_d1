@@ -707,7 +707,7 @@
 
     check-cast v1, Lcom/android/hwcamera/RotateImageView;
 
-    const v2, 0x7f02006b
+    const v2, 0x7f02006e
 
     invoke-virtual {v1, v2}, Lcom/android/hwcamera/RotateImageView;->setImageResource(I)V
 
@@ -881,7 +881,7 @@
 
     check-cast v1, Lcom/android/hwcamera/RotateImageView;
 
-    const v2, 0x7f020064
+    const v2, 0x7f020067
 
     invoke-virtual {v1, v2}, Lcom/android/hwcamera/RotateImageView;->setImageResource(I)V
 
@@ -944,7 +944,7 @@
 
     check-cast v1, Lcom/android/hwcamera/RotateImageView;
 
-    const v2, 0x7f020061
+    const v2, 0x7f020064
 
     invoke-virtual {v1, v2}, Lcom/android/hwcamera/RotateImageView;->setImageResource(I)V
 
@@ -1770,7 +1770,7 @@
     if-ne v5, v6, :cond_3
 
     .line 830
-    const v4, 0x7f02006d
+    const v4, 0x7f020070
 
     .line 838
     :cond_2
@@ -1882,9 +1882,9 @@
     .parameter "v"
 
     .prologue
-    const v11, 0x7f0200ad
+    const v11, 0x7f0200b2
 
-    const v10, 0x7f0200ac
+    const v10, 0x7f0200b1
 
     const/4 v9, 0x0
 
@@ -2470,7 +2470,7 @@
     .line 248
     iget-object v0, p0, Lcom/android/hwcamera/hwui/SuperPanel;->mLastSubPanel:Landroid/view/View;
 
-    const v1, 0x7f0200ac
+    const v1, 0x7f0200b1
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setBackgroundResource(I)V
 
@@ -2671,7 +2671,7 @@
 
     check-cast v4, Lcom/android/hwcamera/RotateImageView;
 
-    const v5, 0x7f020082
+    const v5, 0x7f020087
 
     invoke-virtual {v4, v5}, Lcom/android/hwcamera/RotateImageView;->setImageResource(I)V
 

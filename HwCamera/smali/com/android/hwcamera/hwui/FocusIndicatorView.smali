@@ -64,7 +64,7 @@
 
     .prologue
     .line 50
-    const v0, 0x7f02008c
+    const v0, 0x7f020091
 
     invoke-direct {p0, v0}, Lcom/android/hwcamera/hwui/FocusIndicatorView;->setDrawable(I)V
 
@@ -77,7 +77,7 @@
 
     .prologue
     .line 40
-    const v0, 0x7f02008e
+    const v0, 0x7f020093
 
     invoke-direct {p0, v0}, Lcom/android/hwcamera/hwui/FocusIndicatorView;->setDrawable(I)V
 
@@ -90,7 +90,7 @@
 
     .prologue
     .line 45
-    const v0, 0x7f02008d
+    const v0, 0x7f020092
 
     invoke-direct {p0, v0}, Lcom/android/hwcamera/hwui/FocusIndicatorView;->setDrawable(I)V
 

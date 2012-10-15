@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 3140
+    .line 3135
     iput-object p1, p0, Lcom/android/hwcamera/VideoCamera$8;->this$0:Lcom/android/hwcamera/VideoCamera;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 4
 
     .prologue
-    .line 3144
+    .line 3139
     iget-object v1, p0, Lcom/android/hwcamera/VideoCamera$8;->this$0:Lcom/android/hwcamera/VideoCamera;
 
     #getter for: Lcom/android/hwcamera/VideoCamera;->mEulaPreference:Landroid/content/SharedPreferences;
@@ -53,7 +53,7 @@
 
     invoke-static {v1, v2}, Lcom/android/hwcamera/CameraSettings;->writeFirstTime(Landroid/content/SharedPreferences;Z)V
 
-    .line 3145
+    .line 3140
     iget-object v1, p0, Lcom/android/hwcamera/VideoCamera$8;->this$0:Lcom/android/hwcamera/VideoCamera;
 
     #getter for: Lcom/android/hwcamera/VideoCamera;->mLocationManager:Lcom/android/hwcamera/LocationManager;
@@ -72,11 +72,11 @@
 
     move-result v0
 
-    .line 3146
+    .line 3141
     .local v0, state:Z
     if-nez v0, :cond_0
 
-    .line 3147
+    .line 3142
     const-string v1, "gpsstate"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -99,17 +99,17 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3148
+    .line 3143
     iget-object v1, p0, Lcom/android/hwcamera/VideoCamera$8;->this$0:Lcom/android/hwcamera/VideoCamera;
 
     #calls: Lcom/android/hwcamera/VideoCamera;->showConfirmGpsDialog()V
     invoke-static {v1}, Lcom/android/hwcamera/VideoCamera;->access$6400(Lcom/android/hwcamera/VideoCamera;)V
 
-    .line 3156
+    .line 3151
     :goto_0
     return-void
 
-    .line 3150
+    .line 3145
     :cond_0
     const-string v1, "gpsstate"
 
@@ -133,7 +133,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3151
+    .line 3146
     iget-object v1, p0, Lcom/android/hwcamera/VideoCamera$8;->this$0:Lcom/android/hwcamera/VideoCamera;
 
     #getter for: Lcom/android/hwcamera/VideoCamera;->mPreferences:Lcom/android/hwcamera/ComboPreferences;
@@ -147,7 +147,7 @@
 
     invoke-static {v1, v2, v3}, Lcom/android/hwcamera/RecordLocationPreference;->setLocationPreference(Landroid/content/SharedPreferences;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 3153
+    .line 3148
     iget-object v1, p0, Lcom/android/hwcamera/VideoCamera$8;->this$0:Lcom/android/hwcamera/VideoCamera;
 
     #getter for: Lcom/android/hwcamera/VideoCamera;->mSuperPanel:Lcom/android/hwcamera/hwui/SuperPanel;
@@ -159,7 +159,7 @@
 
     invoke-virtual {v1, v2}, Lcom/android/hwcamera/hwui/SuperPanel;->setGPSstatus(Z)V
 
-    .line 3154
+    .line 3149
     iget-object v1, p0, Lcom/android/hwcamera/VideoCamera$8;->this$0:Lcom/android/hwcamera/VideoCamera;
 
     #calls: Lcom/android/hwcamera/VideoCamera;->onSharedPreferencesChanged()V

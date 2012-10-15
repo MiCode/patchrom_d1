@@ -228,11 +228,22 @@
 
     move-result-wide v14
 
-    .line 1866
+    .line 1867
     .local v14, t2:J
     if-eqz p1, :cond_1
 
-    .line 1867
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/android/hwcamera/Camera$ImageSaver;->this$0:Lcom/android/hwcamera/Camera;
+
+    #getter for: Lcom/android/hwcamera/Camera;->mPictureRemainingKey:Lcom/android/hwcamera/PictureRemaining$Key;
+    invoke-static {v2}, Lcom/android/hwcamera/Camera;->access$8600(Lcom/android/hwcamera/Camera;)Lcom/android/hwcamera/PictureRemaining$Key;
+
+    move-result-object v2
+
+    if-eqz v2, :cond_1
+
+    .line 1868
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/hwcamera/Camera$ImageSaver;->this$0:Lcom/android/hwcamera/Camera;
@@ -257,14 +268,14 @@
 
     invoke-virtual {v2, v5, v6}, Lcom/android/hwcamera/PictureRemaining;->setSizeOfOnePic(Lcom/android/hwcamera/PictureRemaining$Key;I)V
 
-    .line 1869
+    .line 1871
     :cond_1
     sub-long/2addr v14, v12
 
-    .line 1870
+    .line 1872
     if-eqz v20, :cond_2
 
-    .line 1871
+    .line 1873
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/hwcamera/Camera$ImageSaver;->this$0:Lcom/android/hwcamera/Camera;
@@ -273,7 +284,7 @@
 
     invoke-static {v2, v0}, Lcom/android/hwcamera/Util;->broadcastNewPicture(Landroid/content/Context;Landroid/net/Uri;)V
 
-    .line 1874
+    .line 1876
     :cond_2
     const-string v2, "Camera"
 
@@ -297,7 +308,7 @@
 
     invoke-static {v2, v5}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1876
+    .line 1878
     if-eqz v20, :cond_3
 
     move-object/from16 v0, p0
@@ -312,12 +323,12 @@
 
     if-lt v2, v5, :cond_3
 
-    .line 1884
+    .line 1886
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v16
 
-    .line 1885
+    .line 1887
     .local v16, t3:J
     const/16 v2, 0x10
 
@@ -329,17 +340,17 @@
 
     move-result-object v11
 
-    .line 1887
+    .line 1889
     .local v11, t:Lcom/android/hwcamera/Thumbnail;
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v18
 
-    .line 1888
+    .line 1890
     .local v18, t4:J
     sub-long v18, v18, v16
 
-    .line 1889
+    .line 1891
     const-string v2, "Camera"
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -364,7 +375,7 @@
 
     invoke-static {v2, v5}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1890
+    .line 1892
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/hwcamera/Camera$ImageSaver;->this$0:Lcom/android/hwcamera/Camera;
@@ -372,7 +383,7 @@
     #setter for: Lcom/android/hwcamera/Camera;->mThumbnail:Lcom/android/hwcamera/Thumbnail;
     invoke-static {v2, v11}, Lcom/android/hwcamera/Camera;->access$4002(Lcom/android/hwcamera/Camera;Lcom/android/hwcamera/Thumbnail;)Lcom/android/hwcamera/Thumbnail;
 
-    .line 1891
+    .line 1893
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/hwcamera/Camera$ImageSaver;->this$0:Lcom/android/hwcamera/Camera;
@@ -380,7 +391,7 @@
     #calls: Lcom/android/hwcamera/Camera;->requestUpdateThumbnail(Lcom/android/hwcamera/Thumbnail;)V
     invoke-static {v2, v11}, Lcom/android/hwcamera/Camera;->access$8800(Lcom/android/hwcamera/Camera;Lcom/android/hwcamera/Thumbnail;)V
 
-    .line 1893
+    .line 1895
     .end local v11           #t:Lcom/android/hwcamera/Thumbnail;
     .end local v16           #t3:J
     .end local v18           #t4:J

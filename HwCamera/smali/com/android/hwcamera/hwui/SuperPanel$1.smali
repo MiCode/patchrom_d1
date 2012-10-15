@@ -327,7 +327,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0200ac
+    const v2, 0x7f0200b1
 
     invoke-virtual {v1, v2}, Landroid/view/View;->setBackgroundResource(I)V
 

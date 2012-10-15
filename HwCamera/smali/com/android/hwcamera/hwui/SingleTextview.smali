@@ -72,7 +72,7 @@
     invoke-virtual {p0, v5}, Lcom/android/hwcamera/hwui/SingleTextview;->setGravity(I)V
 
     .line 37
-    const v5, 0x7f0200a5
+    const v5, 0x7f0200aa
 
     invoke-virtual {p0, v5}, Lcom/android/hwcamera/hwui/SingleTextview;->setBackgroundResource(I)V
 

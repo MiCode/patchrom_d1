@@ -27,18 +27,18 @@
     .parameter "context"
 
     .prologue
-    .line 2612
+    .line 2614
     iput-object p1, p0, Lcom/android/hwcamera/Camera$MyOrientationEventListener;->this$0:Lcom/android/hwcamera/Camera;
 
-    .line 2613
+    .line 2615
     invoke-direct {p0, p2}, Landroid/view/OrientationEventListener;-><init>(Landroid/content/Context;)V
 
-    .line 2610
+    .line 2612
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/android/hwcamera/Camera$MyOrientationEventListener;->bFirstRun:Z
 
-    .line 2614
+    .line 2616
     return-void
 .end method
 
@@ -51,17 +51,17 @@
     .prologue
     const/16 v4, 0x17
 
-    .line 2621
+    .line 2623
     const/4 v2, -0x1
 
     if-ne p1, v2, :cond_1
 
-    .line 2649
+    .line 2651
     :cond_0
     :goto_0
     return-void
 
-    .line 2623
+    .line 2625
     :cond_1
     iget-object v2, p0, Lcom/android/hwcamera/Camera$MyOrientationEventListener;->this$0:Lcom/android/hwcamera/Camera;
 
@@ -72,7 +72,7 @@
 
     if-eqz v2, :cond_2
 
-    .line 2625
+    .line 2627
     iget-object v2, p0, Lcom/android/hwcamera/Camera$MyOrientationEventListener;->this$0:Lcom/android/hwcamera/Camera;
 
     #getter for: Lcom/android/hwcamera/Camera;->mPanoramaBar:Lcom/android/hwcamera/hwui/PanoramaBar;
@@ -82,7 +82,7 @@
 
     invoke-virtual {v2, p1}, Lcom/android/hwcamera/hwui/PanoramaBar;->setOrientationEx(I)V
 
-    .line 2627
+    .line 2629
     :cond_2
     iget-object v2, p0, Lcom/android/hwcamera/Camera$MyOrientationEventListener;->this$0:Lcom/android/hwcamera/Camera;
 
@@ -93,7 +93,7 @@
     #setter for: Lcom/android/hwcamera/Camera;->mOrientation:I
     invoke-static {v2, v3}, Lcom/android/hwcamera/Camera;->access$9502(Lcom/android/hwcamera/Camera;I)I
 
-    .line 2630
+    .line 2632
     iget-object v2, p0, Lcom/android/hwcamera/Camera$MyOrientationEventListener;->this$0:Lcom/android/hwcamera/Camera;
 
     #getter for: Lcom/android/hwcamera/Camera;->mOrientation:I
@@ -109,24 +109,24 @@
 
     add-int v1, v2, v3
 
-    .line 2632
+    .line 2634
     .local v1, orientationCompensation:I
     iget-boolean v2, p0, Lcom/android/hwcamera/Camera$MyOrientationEventListener;->bFirstRun:Z
 
     if-eqz v2, :cond_3
 
-    .line 2633
+    .line 2635
     const/4 v2, 0x0
 
     iput-boolean v2, p0, Lcom/android/hwcamera/Camera$MyOrientationEventListener;->bFirstRun:Z
 
-    .line 2634
+    .line 2636
     iget-object v2, p0, Lcom/android/hwcamera/Camera$MyOrientationEventListener;->this$0:Lcom/android/hwcamera/Camera;
 
     #calls: Lcom/android/hwcamera/Camera;->makeFirstZoomHintToast(I)V
     invoke-static {v2, v1}, Lcom/android/hwcamera/Camera;->access$11000(Lcom/android/hwcamera/Camera;I)V
 
-    .line 2636
+    .line 2638
     :cond_3
     iget-object v2, p0, Lcom/android/hwcamera/Camera$MyOrientationEventListener;->this$0:Lcom/android/hwcamera/Camera;
 
@@ -137,13 +137,13 @@
 
     if-eq v2, v1, :cond_0
 
-    .line 2637
+    .line 2639
     iget-object v2, p0, Lcom/android/hwcamera/Camera$MyOrientationEventListener;->this$0:Lcom/android/hwcamera/Camera;
 
     #setter for: Lcom/android/hwcamera/Camera;->mOrientationCompensation:I
     invoke-static {v2, v1}, Lcom/android/hwcamera/Camera;->access$3602(Lcom/android/hwcamera/Camera;I)I
 
-    .line 2638
+    .line 2640
     iget-object v2, p0, Lcom/android/hwcamera/Camera$MyOrientationEventListener;->this$0:Lcom/android/hwcamera/Camera;
 
     iget-object v3, p0, Lcom/android/hwcamera/Camera$MyOrientationEventListener;->this$0:Lcom/android/hwcamera/Camera;
@@ -156,7 +156,7 @@
     #calls: Lcom/android/hwcamera/Camera;->setOrientationIndicator(I)V
     invoke-static {v2, v3}, Lcom/android/hwcamera/Camera;->access$11100(Lcom/android/hwcamera/Camera;I)V
 
-    .line 2639
+    .line 2641
     iget-object v2, p0, Lcom/android/hwcamera/Camera$MyOrientationEventListener;->this$0:Lcom/android/hwcamera/Camera;
 
     #getter for: Lcom/android/hwcamera/Camera;->mIsImageCaptureIntent:Z
@@ -166,7 +166,7 @@
 
     if-eqz v2, :cond_4
 
-    .line 2640
+    .line 2642
     iget-object v2, p0, Lcom/android/hwcamera/Camera$MyOrientationEventListener;->this$0:Lcom/android/hwcamera/Camera;
 
     iget-object v3, p0, Lcom/android/hwcamera/Camera$MyOrientationEventListener;->this$0:Lcom/android/hwcamera/Camera;
@@ -178,7 +178,7 @@
 
     invoke-virtual {v2, v3}, Lcom/android/hwcamera/Camera;->setOrientationInvokeAfterCaptureEx(I)V
 
-    .line 2642
+    .line 2644
     :cond_4
     iget-object v2, p0, Lcom/android/hwcamera/Camera$MyOrientationEventListener;->this$0:Lcom/android/hwcamera/Camera;
 
@@ -204,16 +204,16 @@
 
     if-nez v2, :cond_0
 
-    .line 2643
+    .line 2645
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 
     move-result-object v0
 
-    .line 2644
+    .line 2646
     .local v0, msg:Landroid/os/Message;
     iput v4, v0, Landroid/os/Message;->what:I
 
-    .line 2645
+    .line 2647
     iget-object v2, p0, Lcom/android/hwcamera/Camera$MyOrientationEventListener;->this$0:Lcom/android/hwcamera/Camera;
 
     #getter for: Lcom/android/hwcamera/Camera;->mOrientationCompensation:I
@@ -223,7 +223,7 @@
 
     iput v2, v0, Landroid/os/Message;->arg1:I
 
-    .line 2646
+    .line 2648
     iget-object v2, p0, Lcom/android/hwcamera/Camera$MyOrientationEventListener;->this$0:Lcom/android/hwcamera/Camera;
 
     #getter for: Lcom/android/hwcamera/Camera;->mOpenCameraHandler:Landroid/os/Handler;

@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 2496
+    .line 2498
     iput-object p1, p0, Lcom/android/hwcamera/Camera$PanoramaBarListener;->this$0:Lcom/android/hwcamera/Camera;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .parameter "x1"
 
     .prologue
-    .line 2496
+    .line 2498
     invoke-direct {p0, p1}, Lcom/android/hwcamera/Camera$PanoramaBarListener;-><init>(Lcom/android/hwcamera/Camera;)V
 
     return-void
@@ -54,12 +54,12 @@
     .parameter "bshut"
 
     .prologue
-    .line 2498
+    .line 2500
     iget-object v0, p0, Lcom/android/hwcamera/Camera$PanoramaBarListener;->this$0:Lcom/android/hwcamera/Camera;
 
     #calls: Lcom/android/hwcamera/Camera;->stopPanorama(Z)V
     invoke-static {v0, p1}, Lcom/android/hwcamera/Camera;->access$10800(Lcom/android/hwcamera/Camera;Z)V
 
-    .line 2499
+    .line 2501
     return-void
 .end method

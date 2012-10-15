@@ -24,7 +24,7 @@
     .parameter
 
     .prologue
-    .line 2759
+    .line 2763
     iput-object p1, p0, Lcom/android/hwcamera/VideoCamera$6;->this$0:Lcom/android/hwcamera/VideoCamera;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -39,7 +39,7 @@
     .parameter "msg"
 
     .prologue
-    .line 2762
+    .line 2766
     iget-object v0, p0, Lcom/android/hwcamera/VideoCamera$6;->this$0:Lcom/android/hwcamera/VideoCamera;
 
     #getter for: Lcom/android/hwcamera/VideoCamera;->mThumbnailView:Lcom/android/hwcamera/RotateImageView;
@@ -53,7 +53,7 @@
 
     if-nez v0, :cond_0
 
-    .line 2763
+    .line 2767
     iget-object v1, p0, Lcom/android/hwcamera/VideoCamera$6;->this$0:Lcom/android/hwcamera/VideoCamera;
 
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
@@ -63,7 +63,7 @@
     #setter for: Lcom/android/hwcamera/VideoCamera;->mThumbnail:Lcom/android/hwcamera/Thumbnail;
     invoke-static {v1, v0}, Lcom/android/hwcamera/VideoCamera;->access$5502(Lcom/android/hwcamera/VideoCamera;Lcom/android/hwcamera/Thumbnail;)Lcom/android/hwcamera/Thumbnail;
 
-    .line 2764
+    .line 2768
     iget-object v0, p0, Lcom/android/hwcamera/VideoCamera$6;->this$0:Lcom/android/hwcamera/VideoCamera;
 
     #getter for: Lcom/android/hwcamera/VideoCamera;->mThumbnail:Lcom/android/hwcamera/Thumbnail;
@@ -73,7 +73,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 2765
+    .line 2769
     iget-object v0, p0, Lcom/android/hwcamera/VideoCamera$6;->this$0:Lcom/android/hwcamera/VideoCamera;
 
     #getter for: Lcom/android/hwcamera/VideoCamera;->mThumbnailView:Lcom/android/hwcamera/RotateImageView;
@@ -94,7 +94,7 @@
 
     invoke-virtual {v0, v1}, Lcom/android/hwcamera/RotateImageView;->setBitmap(Landroid/graphics/Bitmap;)V
 
-    .line 2768
+    .line 2772
     :cond_0
     return-void
 .end method
