@@ -1120,14 +1120,12 @@
     .end annotation
 
     .prologue
-    const/16 v0, 0xf
-
-    invoke-virtual {p0, v0}, Lcom/android/internal/telephony/cdma/CDMAPhone;->removeMessages(I)V
-
+    .line 434
     iget-object v0, p0, Lcom/android/internal/telephony/cdma/CDMAPhone;->mCT:Lcom/android/internal/telephony/cdma/CdmaCallTracker;
 
     invoke-virtual {v0}, Lcom/android/internal/telephony/cdma/CdmaCallTracker;->acceptCall()V
 
+    .line 435
     return-void
 .end method
 
