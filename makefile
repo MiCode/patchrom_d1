@@ -43,6 +43,9 @@ local-zip-misc:
 	cp other/StockSettings.apk $(ZIP_DIR)/system/app/
 	cp other/Settings_ex.apk $(ZIP_DIR)/system/app/
 
+	@echo "using b118's libcutils.so, because the lastest causes phone can't start"
+	cp other/libcutils.so_b118 $(ZIP_DIR)/system/lib/libcutils.so
+
 	@echo update bootanimation
 	rm $(ZIP_DIR)/system/bin/bootanimation
 	cp other/bootanimation $(ZIP_DIR)/system/bin/bootanimation
