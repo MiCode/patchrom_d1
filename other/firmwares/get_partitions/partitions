@@ -1,0 +1,16 @@
+boot:/dev/block/mmcblk0p6
+bootloader:/dev/block/mmcblk0p3
+crypto:/dev/block/mmcblk0p4
+efi:/dev/block/mmcblk0p1
+misc:/dev/block/mmcblk0p9
+modemimage:/dev/block/mmcblk0p10
+modemnvm1:/dev/block/mmcblk0p11
+modemnvm2:/dev/block/mmcblk0p12
+nvme:/dev/block/mmcblk0p7
+oeminfo:/dev/block/mmcblk0p8
+recovery:/dev/block/mmcblk0p5
+recovery2:/dev/block/mmcblk0p15
+reserved1:/dev/block/mmcblk0p17
+reserved2:/dev/block/mmcblk0p18
+splash:/dev/block/mmcblk0p16
+xloader:/dev/block/mmcblk0p2
